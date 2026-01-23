@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta conmigo para agendar tu sesión de terapia psicológica">
+    <title>Lic. Yeny Huayra</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <i class="fas fa-brain"></i>
+                    <span>Lic. Yeny Huayra</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                    <li><a href="especialidades.html">Especialidades</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Interno -->
+    <section class="hero-interno">
+        <div class="container">
+            <h1>Contacto</h1>
+            <p>Agenda tu cita o resuelve tus dudas</p>
+        </div>
+    </section>
+
+    <!-- Información de Contacto -->
+    <section class="contacto-info">
+        <div class="container">
+            <div class="contacto-grid">
+                
+                <div class="contacto-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Teléfono</h3>
+                    <p>+51 946 153 202</p>
+                    <a href="tel:+51946153202" class="btn-small">Llamar</a>
+                </div>
+
+                <div class="contacto-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p>+51 946 153 202</p>
+                    <a href="https://wa.link/kbp69y" target="_blank" class="btn-small">Enviar mensaje</a>
+                </div>
+
+                <div class="contacto-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>73381577@continental.edu.pe</p>
+                    <a href="mailto:73381577@continental.edu.pe" class="btn-small">Enviar correo</a>
+                </div>
+
+                <div class="contacto-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Ubicación</h3>
+                    <p>Jr. Veliz</p>
+                    <a href="https://maps.app.goo.gl/CfaQqJPq9ymv6P8L8" target="_blank" class="btn-small">Ver mapa</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section class="formulario-contacto">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-info">
+                    <h2>Agenda tu Primera Sesión</h2>
+                    <p>Completa el formulario y me pondré en contacto contigo en menos de 24 horas.</p>
+                    
+                    <div class="horarios">
+                        <h3><i class="fas fa-clock"></i> Horarios de Atención</h3>
+                        <ul>
+                            <li><strong>Lunes a Viernes:</strong> 9:00 AM - 7:00 PM</li>
+                            <li><strong>Sábados:</strong> 10:00 AM - 2:00 PM</li>
+                            <li><strong>Domingos:</strong> Cerrado</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-importante">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <p><strong>Importante:</strong> Si estás en crisis o emergencia, por favor contacta servicios de emergencia o líneas de ayuda 24/7.</p>
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <form id="contactForm" action="https://formspree.io/f/TU_FORMSPREE_ID" method="POST">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono">Teléfono *</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="edad">Edad</label>
+                            <input type="number" id="edad" name="edad" min="1" max="120">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tipo-terapia">Tipo de Terapia *</label>
+                            <select id="tipo-terapia" name="tipo-terapia" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="individual">Terapia Individual</option>
+                                <option value="pareja">Terapia de Pareja</option>
+                                <option value="familiar">Terapia Familiar</option>
+                                <option value="infantil">Terapia Infantil/Adolescente</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="modalidad">Modalidad Preferida *</label>
+                            <select id="modalidad" name="modalidad" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="presencial">Presencial</option>
+                                <option value="online">En Línea</option>
+                                <option value="indistinto">Indistinto</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Cuéntame brevemente tu situación *</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="privacidad" name="privacidad" required>
+                            <label for="privacidad">He leído y acepto la política de privacidad y el manejo confidencial de mis datos *</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Enviar Solicitud
+                        </button>
+
+                        <p class="form-note">Los campos marcados con * son obligatorios</p>
+                    </form>
+
+                    <div id="formSuccess" class="form-message success" style="display: none;">
+                        <i class="fas fa-check-circle"></i>
+                        <p>¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.</p>
+                    </div>
+
+                    <div id="formError" class="form-message error" style="display: none;">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <p>Hubo un error al enviar el formulario. Por favor intenta nuevamente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa -->
+    <section class="mapa" id="mapa">
+        <div class="container">
+            <h2 class="section-title">¿Cómo Llegar?</h2>
+            <div class="mapa-container">
+                <!-- Reemplaza con tu ubicación real -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.6!2d-99.1!3d19.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI0JzAwLjAiTiA5OcKwMDYnMDAuMCJX!5e0!3m2!1ses!2smx!4v1234567890" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+            <p class="mapa-direccion">
+                <i class="fas fa-map-marker-alt"></i>
+                <strong>Dirección:</strong> Jr. Veliz
+            </p>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuánto dura una sesión?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Las sesiones individuales duran 50 minutos, mientras que las sesiones de pareja o familia duran 60 minutos.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Con qué frecuencia debo asistir?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Generalmente recomiendo sesiones semanales al inicio. Conforme avances, podemos espaciarlas a quincenales.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Aceptan seguros médicos?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Proporciono factura que puedes presentar a tu aseguradora para reembolso, según tu póliza.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿La terapia en línea es efectiva?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, estudios demuestran que la terapia en línea tiene la misma efectividad que la presencial para la mayoría de los casos.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuántas sesiones necesitaré?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Depende de cada caso. Algunos objetivos se logran en 8-12 sesiones, mientras que procesos más profundos pueden requerir más tiempo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Psicóloga Yeny Huayra Huacho</h3>
+                    <p>C.PS.P 65670</p>
+                    <!--<p>Especialista en [Tu especialidad]</p>-->
+                </div>
+
+                <div class="footer-section">
+                    <h3>Navegación</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                        <li><a href="especialidades.html">Especialidades</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-phone"></i> +51 946 153 202</p>
+                    <p><i class="fas fa-envelope"></i> 73381577@continental.edu.pe</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/huayrahuachoyeny" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/psic_yenyhuayra?fbclid=IwY2xjawPeju1leHRuA2FlbQIxMABicmlkETFVYVBVdTRZNURITzBhWWtrc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHjsht4UIkCPosep6uaL7I7lN66fktIV7Z1B2OHzxSxD-JfBJrRdkT0hI9Edx_aem_6E0GGpoZfxyTyTle_p83pA" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.link/kbp69y" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Psicóloga Yeny Huayra. Todos los derechos reservados.</p>
+                <p class="disclaimer">Este sitio no sustituye atención médica de emergencia. En caso de crisis, contacta servicios de emergencia.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>
